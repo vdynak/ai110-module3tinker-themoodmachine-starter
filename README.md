@@ -1,5 +1,11 @@
 # The Mood Machine
 
+## Quick heads up before you dive in
+
+The big thing to get here is that a model is only as smart as the rules or data you give it — every wrong prediction has a reason, and figuring out that reason is literally the whole point. You'll probably get most stuck in two spots: writing `score_text` (hint: just loop over tokens and keep a running score), and seeing the ML model hit 1.00 accuracy and thinking it's a genius — it's not, it memorized 18 examples. AI is super useful for coming up with weird test sentences and talking through why a token is scoring wrong, but don't let it just hand you the answer for `predict_label`, that one's short enough that you'll miss the whole idea if you skip it. If you're staring at a wrong prediction and have no idea why, just print the tokens and the score for that sentence — nine times out of ten that shows you exactly what's going wrong.
+
+---
+
 The Mood Machine is a simple text classifier that begins with a rule based approach and can optionally be extended with a small machine learning model. It tries to guess whether a short piece of text sounds **positive**, **negative**, **neutral**, or even **mixed** based on patterns in your data.
 
 This lab gives you hands on experience with how basic systems work, where they break, and how different modeling choices affect fairness and accuracy. You will edit code, add data, run experiments, and write a short model card reflection.
@@ -65,3 +71,5 @@ During this lab you will:
 - When debugging, print tokens, scores, or intermediate choices.
 - Ask an AI assistant to help create edge case posts or unusual wording.
 - Try examples that mislead or confuse your model. Failure cases teach you the most.
+
+

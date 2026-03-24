@@ -23,6 +23,12 @@ POSITIVE_WORDS = [
     "chill",
     "relaxed",
     "amazing",
+    "hopeful",
+    "proud",
+    "healed",
+    "fire",
+    "sick",
+    "wicked",
 ]
 
 NEGATIVE_WORDS = [
@@ -36,6 +42,11 @@ NEGATIVE_WORDS = [
     "stressed",
     "hate",
     "boring",
+    "annoyed",
+    "exhausted",
+    "stuck",
+    "missing",
+    "died",
 ]
 
 # ---------------------------------------------------------------------
@@ -50,6 +61,18 @@ SAMPLE_POSTS = [
     "This is fine",
     "So excited for the weekend",
     "I am not happy about this",
+    "That concert was actually amazing 😂",
+    "lowkey annoyed that my package is still missing",
+    "I passed the quiz but now I'm stressed about the project 😅",
+    "meh, it's just another Monday",
+    "No cap, that meal healed my soul",
+    "I absolutely love waiting 40 minutes for the bus",
+    "kinda want to go out, kinda want to hide under a blanket 🥲",
+    "sure, everything is totally under control lol",
+    "I'm not mad, just disappointed tbh",
+    "Finals are brutal but I'm weirdly motivated",
+    "Best nap ever, I'm reborn 😂",
+    "lol everything is on fire but we're chilling",
 ]
 
 # Human labels for each post above.
@@ -65,10 +88,20 @@ TRUE_LABELS = [
     "neutral",   # "This is fine"
     "positive",  # "So excited for the weekend"
     "negative",  # "I am not happy about this"
+    "positive",  # "That concert was actually amazing 😂"
+    "negative",  # "lowkey annoyed that my package is still missing"
+    "mixed",     # "I passed the quiz but now I'm stressed about the project 😅"
+    "neutral",   # "meh, it's just another Monday"
+    "positive",  # "No cap, that meal healed my soul"
+    "negative",  # "I absolutely love waiting 40 minutes for the bus"
+    "mixed",     # "kinda want to go out, kinda want to hide under a blanket 🥲"
+    "negative",  # "sure, everything is totally under control lol"
+    "negative",  # "I'm not mad, just disappointed tbh"
+    "mixed",     # "Finals are brutal but I'm weirdly motivated"
+    "positive",  # "Best nap ever, I'm reborn 😂"
+    "mixed",     # "lol everything is on fire but we're chilling"
 ]
 
-# TODO: Add 5-10 more posts and labels.
-#
 # Requirements:
 #   - For every new post you add to SAMPLE_POSTS, you must add one
 #     matching label to TRUE_LABELS.
